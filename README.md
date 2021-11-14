@@ -13,10 +13,11 @@ HTML, CSS, Git, Figma, PixelPerfect, БЭМ
 
 
 ## Начало проекта:
+```bash
 # Перейти в директорию с проектом:
 cd kvast
 # Установить зависимости:
 npm install
 # Собрать итоговую сборку в папку dist/
 gulp build
-
+```
