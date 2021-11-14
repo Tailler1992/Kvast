@@ -1,0 +1,63 @@
+.features {
+    padding: 80px 0 90px 0;
+    background-color: #ffcb78;
+
+    &__container {
+        width: 1015px;
+        margin: 0 auto;
+    }
+
+    &__list::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    &__item {
+        float: left;
+        position: relative;
+        width: 210px;
+        padding: 0 95px 0 95px;
+        border-right: 1px solid #e5b66c;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+            border-right-color: transparent;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../img/spritesheet.png");
+            background-repeat: no-repeat;
+        }
+        &_brew::before {
+            background-position: -5px -5px;
+            width: 50px;
+            height: 68px;
+        }
+        &_matreshka::before {
+            background-position: -65px -31px;
+            width: 46px;
+            height: 65px;
+        }
+
+        &_thumbsup::before {
+            background-position: -121px -5px;
+            width: 63px;
+            height: 58px;
+        }
+    }
+
+    &__title {
+        margin-top: 100px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: #000000;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,73 @@
+.feedback#feedback-anchor
+    .feedback__container
+        h2.feedback__title Заказать
+        p.feedback__text
+            | Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите
+            | настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.
+
+        form.feedback__form(
+            action=''
+            method='post'
+            )
+            div.feedback__line
+                label.feedback__label(for='fullname-field') Представьтесь:
+                input.feedback__form-element(
+                    type='text'
+                    name='fullname'
+                    id='fullname-field'
+                    required
+                    )
+            .feedback__line-telephone
+                .feedback__line-first
+                    label.feedback__label(for='first-phone-field') Номер телефона:
+                    input.feedback__form-element(
+                        type='tel'
+                        name='first-phone'
+                        id='first-phone-field'
+                        required
+                        )
+                .feedback__line-second
+                    label.feedback__label(for='second-phone-field') Доп. номер:
+                    input.feedback__form-element(
+                        type='tel'
+                        name='second-phone"'
+                        id='second-phone-field'
+                        )
+            div.feedback__line
+                label.feedback__label(for='email-field') Email:
+                input.feedback__form-element(
+                    type='email'
+                    name='email'
+                    id='email-field'
+                    required
+                    )
+            div.feedback__line
+                label.feedback__label(for='select-field') Объём заказа:
+                br
+                select.feedback__form-element.feedback__form-element-arrow(
+                    name='select'
+                    id="select-field"
+                    )
+                    option(value='1') От 5 до 10 баррелей в неделю
+                    option(value='2') От 10 до 15 баррелей в неделю
+                    option(value='3') От 15 до 20 баррелей в неделю
+
+            div.feedback__line
+                label.feedback__label(for='message-field') Доп. комментарий:
+                textarea.feedback__form-element.feedback__form-element_big(
+                    name='message'
+                    id="message-field"
+                    )
+            div.feedback__line-checkbox
+                label.feedback__label-check Я согласен получать квасную рассылку
+                    input.feedback__checkbox(
+                        type="checkbox"
+                        checked
+                        )
+                    span.feedback__checkmark
+            input.button.button_theme-brown(
+                type='submit'
+                value='Отправить заказ'
+                )
+
+

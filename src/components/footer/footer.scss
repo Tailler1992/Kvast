@@ -1,0 +1,138 @@
+.footer {
+    background-color: #000000;
+    padding: 60px 0 70px 0;
+
+    &__conteiner {
+        width: 1015px;
+        margin: 0 auto;
+    }
+    &__top::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    &__logo {
+        float: left;
+        margin-left: 37px;
+        width: 140px;
+        height: 76px;
+    }
+    &__bottom {
+        margin-top: 47px;
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+    &__social {
+        float: left;
+        width: 216px;
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        &-link {
+            float: left;
+            position: relative;
+            width: 70px;
+            height: 66px;
+            margin-left: -1px;
+            font-size: 0;
+            background-color: #1b1b1b;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border: 1px solid rgba(255, 203, 120, 0.1);
+            &:hover {
+                z-index: 1;
+                border-color: rgba(255, 203, 120, 0.3);
+            }
+            &:active {
+                opacity: 0.5;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url("../img/spritesheet.png");
+                background-repeat: no-repeat;
+            }
+            &_inst::before {
+                background-position: -83px -5px;
+                width: 14px;
+                height: 14px;
+                top: 28px;
+                left: 28px;
+            }
+            &_fb::before {
+                width: 8px;
+                height: 16px;
+                background-position: -65px -5px;
+                top: 27px;
+                left: 29px;
+            }
+            &_vk::before {
+                width: 20px;
+                height: 11px;
+                background-position: -121px -73px;
+                top: 29.5px;
+                left: 23px;
+            }
+        }
+    }
+    &__note {
+        float: left;
+        width: 200px;
+        margin: 12px 0 0 91px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #989898;
+    }
+    &__copyright {
+        float: left;
+        width: 300px;
+        margin-left: 200px;
+
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        &-link {
+            position: relative;
+            display: inline-block;
+            width: 70px;
+            height: 66px;
+            vertical-align: top;
+            background-color: #1b1b1b;
+            border: 1px solid rgba(255, 203, 120, 0.1);
+            &:hover {
+                border-color: rgba(255, 203, 120, 0.3);
+            }
+            &:active {
+                opacity: 0.5;
+            }
+        }
+        &-img {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__line {
+        display: inline-block;
+        margin: 25px 0 0 30px;
+        font-size: 14px;
+        line-height: 20px;
+        vertical-align: middle;
+        color: #989898;
+
+        &-link {
+            color: #989898;
+            text-decoration: none;
+        }
+    }
+}

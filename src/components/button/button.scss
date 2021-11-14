@@ -1,0 +1,21 @@
+.button {
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px 20px;
+    font-weight: bold;
+    line-height: inherit;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #834700;
+    border: 2px solid #834700;
+
+    &:hover {
+        color: #6a3900;
+        border-color: #6a3900;
+    }
+    &:active {
+        color: rgba(92, 50, 0, 0.3);
+        border-color: #cec1b2;
+    }
+}

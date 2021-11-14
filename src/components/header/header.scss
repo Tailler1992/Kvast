@@ -1,0 +1,35 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 490px;
+    padding-top: 60px;
+    background-image: url("../img/wheat-back.jpg");
+    background-color: chocolate;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    &__top {
+        margin-bottom: 120px;
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+    &__logo {
+        float: left;
+        width: 140px;
+        height: 76px;
+    }
+
+    &__title {
+        font-size: 70px;
+        line-height: 70px;
+        text-align: center;
+        color: white;
+    }
+}

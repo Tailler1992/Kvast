@@ -1,0 +1,25 @@
+@import "_nullstile.scss";
+
+body {
+    min-width: 1040px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "Arial", sans-serif;
+    color: #000000;
+    background-color: white;
+}
+
+@import "../components/menu/menu.scss";
+@import "../components/button/button.scss";
+@import "../components/button/_theme/button_theme-brown.scss";
+@import "../components/button/_theme/button_theme-light.scss";
+
+@import "../components/header/header.scss";
+@import "../components/products/products.scss";
+@import "../components/features/features.scss";
+@import "../components/history/history.scss";
+@import "../components/reviews/reviews.scss";
+@import "../components/assortment/assortment.scss";
+@import "../components/feedback/feedback.scss";
+@import "../components/footer/footer.scss";

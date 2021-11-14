@@ -1,0 +1,45 @@
+.products
+    .products__container
+        h2.products__title Новинки
+        .products__list
+
+            .products__card
+                h3.products__card-title Вахтёр
+                .products__info
+                    table.products__price-list
+                        tr
+                            td.products__price-item Алк.
+                            td.products__price-item &lt; 1%
+                        tr
+                            td.products__price-item Ккал
+                            td.products__price-item 35
+                    p.products__info-text Ржаной хлеб, Вода, Солод, Соль
+                img.products__card-image(src='img/bottle-left.jpg' alt='')
+                p.products__slogan
+                    | Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и придаст сил для вечерних
+                    | приключений!
+                .products__bye
+                    +btn("", "#", "Подробнее")
+                    .products__bye-spacing
+                    +btn("button_theme-brown", "#", "Купить")
+                    b.products__cost 150 Р.
+
+            .products__card
+                h3.products__card-title Романтик
+                .products__info
+                    table.products__price-list
+                        tr
+                            td.products__price-item Алк.
+                            td.products__price-item &lt; 0,5%
+                        tr
+                            td.products__price-item Ккал
+                            td.products__price-item 27
+                    p.products__info-text Ячменный хлеб, Вода, Солод, Апельсин
+                img.products__card-image(src='img/bottle-right.jpg' alt='')
+                p.products__slogan
+                    | Лёгкий и освежающий напиток поможет сохранять отличное настроение в течение всего дня.
+                .products__bye
+                    +btn("", "#", "Подробнее")
+                    .products__bye-spacing
+                    +btn("button_theme-brown", "#", "Купить")
+                    b.products__cost  90 Р.
