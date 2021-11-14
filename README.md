@@ -1,5 +1,5 @@
 ##  Учебный проект от HTML Academy (Кваст)
-HTML, CSS, Git, Figma, PixelPerfect, БЭМ
+HTML, CSS, Git, Photoshop, PixelPerfect, БЭМ
 Препроцессоры Pug, SCSS
 Сборщик Gulp
 Сетка float
